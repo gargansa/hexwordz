@@ -38,11 +38,11 @@ script = ExtResource("4_l1m5a")
 
 [node name="Settings" type="Button" parent="."]
 offset_left = 325.0
-offset_top = 302.0
+offset_top = 430.0
 offset_right = 675.0
-offset_bottom = 402.0
+offset_bottom = 530.0
 scale = Vector2(1.5037, 1)
-text = "Multiplayer"
+text = "Settings"
 script = ExtResource("5_dnnna")
 
 [connection signal="pressed" from="Level" to="Level" method="_on_pressed"]
