@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://ck3bef82526ug"]
+
+[ext_resource type="Script" path="res://Scripts/menu.gd" id="1_uv7i7"]
+[ext_resource type="Script" path="res://Scripts/Level.gd" id="2_7pjcc"]
+[ext_resource type="Script" path="res://Scripts/timed.gd" id="3_gxk8o"]
+[ext_resource type="Script" path="res://Scripts/multiplayer.gd" id="4_l1m5a"]
+[ext_resource type="Script" path="res://Scripts/settings.gd" id="5_dnnna"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_uv7i7")
+
+[node name="Level" type="Button" parent="."]
+offset_left = 325.0
+offset_top = 50.0
+offset_right = 675.0
+offset_bottom = 150.0
+scale = Vector2(1.511, 1)
+text = "Level"
+script = ExtResource("2_7pjcc")
+
+[node name="Timed" type="Button" parent="."]
+offset_left = 325.0
+offset_top = 179.0
+offset_right = 675.0
+offset_bottom = 279.0
+scale = Vector2(1.5037, 1)
+text = "Timed"
+script = ExtResource("3_gxk8o")
+
+[node name="Multiplayer" type="Button" parent="."]
+offset_left = 325.0
+offset_top = 302.0
+offset_right = 675.0
+offset_bottom = 402.0
+scale = Vector2(1.5037, 1)
+text = "Multiplayer"
+script = ExtResource("4_l1m5a")
+
+[node name="Settings" type="Button" parent="."]
+offset_left = 325.0
+offset_top = 302.0
+offset_right = 675.0
+offset_bottom = 402.0
+scale = Vector2(1.5037, 1)
+text = "Multiplayer"
+script = ExtResource("5_dnnna")
+
+[connection signal="pressed" from="Level" to="Level" method="_on_pressed"]
+[connection signal="pressed" from="Timed" to="Timed" method="_on_pressed"]
+[connection signal="pressed" from="Multiplayer" to="Multiplayer" method="_on_pressed"]
+[connection signal="pressed" from="Settings" to="Settings" method="_on_pressed"]
