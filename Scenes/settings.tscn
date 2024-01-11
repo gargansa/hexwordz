@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1kngby5457cu"]
+
+[ext_resource type="Texture2D" uid="uid://brmpgsu14inij" path="res://spr_hex_full_0.png" id="1_2ppqh"]
+[ext_resource type="PackedScene" uid="uid://bejuug55e57dw" path="res://Scenes/Buttons/BackButton.tscn" id="2_so1v1"]
+
+[node name="level" type="Node2D"]
+
+[node name="SprHexFull0" type="Sprite2D" parent="."]
+position = Vector2(104, 88)
+texture = ExtResource("1_2ppqh")
+
+[node name="SprHexFull1" type="Sprite2D" parent="."]
+position = Vector2(174, 210)
+texture = ExtResource("1_2ppqh")
+
+[node name="BackButton" parent="." instance=ExtResource("2_so1v1")]
+position = Vector2(505, -2)

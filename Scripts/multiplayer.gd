@@ -13,3 +13,4 @@ func _process(delta):
 
 func _on_pressed():
 	print("Clicked Multiplayer")
+	get_tree().change_scene_to_file("res://Scenes/multiplayer.tscn")

@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bejuug55e57dw"]
+
+[ext_resource type="Script" path="res://Scenes/BackButton.gd" id="1_fnxii"]
+[ext_resource type="Texture2D" uid="uid://brmpgsu14inij" path="res://spr_hex_full_0.png" id="1_xl1uu"]
+[ext_resource type="Texture2D" uid="uid://lqn7f43m0xnn" path="res://spr_hex_highlight_0.png" id="2_66von"]
+
+[node name="BackButton" type="Node2D"]
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_xl1uu")
+texture_pressed = ExtResource("2_66von")
+script = ExtResource("1_fnxii")
+
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
