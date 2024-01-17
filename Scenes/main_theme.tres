@@ -1,0 +1,9 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cf8vlkodgx1a5"]
+
+[ext_resource type="FontFile" uid="uid://w38aaf78q0s3" path="res://JungleFever.ttf" id="1_chapg"]
+
+[resource]
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/colors/font_shadow_color = Color(0.414107, 0.420883, 0.427662, 1)
+Label/font_sizes/font_size = 135
+Label/fonts/font = ExtResource("1_chapg")

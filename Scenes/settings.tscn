@@ -1,17 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://c1kngby5457cu"]
+[gd_scene load_steps=3 format=3 uid="uid://djff8620xuq6d"]
 
-[ext_resource type="Texture2D" uid="uid://brmpgsu14inij" path="res://spr_hex_full_0.png" id="1_2ppqh"]
-[ext_resource type="PackedScene" uid="uid://bejuug55e57dw" path="res://Scenes/Buttons/BackButton.tscn" id="2_so1v1"]
+[ext_resource type="Texture2D" uid="uid://brmpgsu14inij" path="res://spr_hex_full_0.png" id="1_kekt3"]
+[ext_resource type="PackedScene" uid="uid://bejuug55e57dw" path="res://Scenes/Buttons/BackButton.tscn" id="2_74eqs"]
 
-[node name="level" type="Node2D"]
+[node name="LevelGameZone" type="Node2D"]
 
 [node name="SprHexFull0" type="Sprite2D" parent="."]
-position = Vector2(104, 88)
-texture = ExtResource("1_2ppqh")
+position = Vector2(103, 109)
+texture = ExtResource("1_kekt3")
 
-[node name="SprHexFull1" type="Sprite2D" parent="."]
-position = Vector2(174, 210)
-texture = ExtResource("1_2ppqh")
-
-[node name="BackButton" parent="." instance=ExtResource("2_so1v1")]
-position = Vector2(505, -2)
+[node name="BackButton" parent="." instance=ExtResource("2_74eqs")]
+position = Vector2(485, 11)

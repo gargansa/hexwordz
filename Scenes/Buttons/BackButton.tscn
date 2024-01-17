@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bejuug55e57dw"]
+[gd_scene load_steps=5 format=3 uid="uid://bejuug55e57dw"]
 
-[ext_resource type="Script" path="res://BackButton.gd" id="1_fnxii"]
+[ext_resource type="Script" path="res://Scripts/BackButton.gd" id="1_fnxii"]
 [ext_resource type="Texture2D" uid="uid://brmpgsu14inij" path="res://spr_hex_full_0.png" id="1_xl1uu"]
 [ext_resource type="Texture2D" uid="uid://lqn7f43m0xnn" path="res://spr_hex_highlight_0.png" id="2_66von"]
+[ext_resource type="Theme" uid="uid://cf8vlkodgx1a5" path="res://Scenes/main_theme.tres" id="4_ppatu"]
 
 [node name="BackButton" type="Node2D"]
 script = ExtResource("1_fnxii")
@@ -12,5 +13,14 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture_normal = ExtResource("1_xl1uu")
 texture_pressed = ExtResource("2_66von")
+
+[node name="Label" type="Label" parent="."]
+offset_top = -48.0
+offset_right = 139.0
+offset_bottom = 183.0
+theme = ExtResource("4_ppatu")
+text = "↵"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
