@@ -5,13 +5,13 @@
 [node name="Menu" type="Node2D"]
 
 [node name="Level" parent="." instance=ExtResource("1_sqxbp")]
-position = Vector2(244, 113)
+position = Vector2(0, 100)
 
 [node name="Timed" parent="." instance=ExtResource("1_sqxbp")]
-position = Vector2(244, 187)
+position = Vector2(0, 300)
 
 [node name="Multiplayer" parent="." instance=ExtResource("1_sqxbp")]
-position = Vector2(244, 259)
+position = Vector2(0, 600)
 
 [node name="Settings" parent="." instance=ExtResource("1_sqxbp")]
-position = Vector2(244, 340)
+position = Vector2(0, 900)

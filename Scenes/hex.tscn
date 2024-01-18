@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://ceoa5f77pjoii"]
+
+[ext_resource type="Texture2D" uid="uid://brmpgsu14inij" path="res://spr_hex_full_0.png" id="1_2etmg"]
+[ext_resource type="Script" path="res://Scenes/hex.gd" id="1_igso4"]
+[ext_resource type="Theme" uid="uid://cf8vlkodgx1a5" path="res://Scenes/main_theme.tres" id="3_rxdwf"]
+
+[node name="hex" type="Node2D"]
+script = ExtResource("1_igso4")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 140.0
+offset_bottom = 162.0
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_2etmg")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 6.0
+offset_top = 4.0
+offset_right = 50.0
+offset_bottom = 60.0
+theme = ExtResource("3_rxdwf")
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
