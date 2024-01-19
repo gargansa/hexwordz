@@ -14,11 +14,12 @@ func set_label(string):
 	$Label.text = string
 
 func next_position(position):
-	var size = Vector2(
+	var size = get_size()
+	self.position.x = size.x * position
+
+
+func get_size():
+	return Vector2(
 		$TextureRect.texture.get_width(),
 		$TextureRect.texture.get_height()
 		) * $TextureRect.scale
-	self.position.x = size.x * position
-#	self.position.y += height * (position % 2)/2
-	print(self.position.x)
-	print(self.position.y)

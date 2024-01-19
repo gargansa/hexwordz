@@ -11,9 +11,9 @@ point_count = 2
 script = ExtResource("1_rqlc5")
 
 [node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
 offset_right = 196.0
 offset_bottom = 31.0
-text = "Menu Button"
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
 position = Vector2(100, 15)
@@ -34,4 +34,6 @@ scale_amount_max = 0.03
 scale_amount_curve = SubResource("Curve_dupbs")
 color = Color(0, 1, 1, 1)
 
+[connection signal="mouse_entered" from="Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Button" to="." method="_on_button_mouse_exited"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
